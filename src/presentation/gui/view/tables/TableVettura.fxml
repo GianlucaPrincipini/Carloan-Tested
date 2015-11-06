@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.table.TableVettura">
+   <children>
+      <TableView fx:id="tabVetture" prefHeight="450.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="targa" prefWidth="100.0" text="Targa" />
+            <TableColumn fx:id="modello" prefWidth="100.0" text="Modello" />
+            <TableColumn fx:id="agenziaLocalizzazione" prefWidth="190.0" text="Agenzia localizzazione" />
+            <TableColumn fx:id="chilometraggio" prefWidth="132.0" text="Chilometraggio" />
+            <TableColumn fx:id="stato" prefWidth="90.0" text="Stato" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

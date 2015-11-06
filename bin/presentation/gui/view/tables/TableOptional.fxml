@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="420.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.table.TableOptional">
+   <children>
+      <TableView fx:id="tabOptionals" prefHeight="450.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="100.0" text="Id" />
+            <TableColumn fx:id="tipo" prefWidth="100.0" text="Tipo" />
+            <TableColumn fx:id="costo" prefWidth="100.0" text="Costo" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

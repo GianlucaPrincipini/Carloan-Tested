@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="420.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.table.TableAgenzia">
+   <children>
+      <ScrollPane prefHeight="420.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane prefHeight="448.0" prefWidth="1278.0">
+               <children>
+                  <TableView fx:id="tabAgenzie" prefHeight="430.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="id" prefWidth="100.0" text="Id" />
+                        <TableColumn fx:id="citta" prefWidth="100.0" text="Città" />
+                        <TableColumn fx:id="indirizzo" prefWidth="100.0" text="Indirizzo" />
+                        <TableColumn fx:id="telefono" prefWidth="150.0" text="Numero di telefono" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.table.TableContratto">
+   <children>
+      <ScrollPane prefHeight="420.0" prefViewportHeight="400.0" prefViewportWidth="600.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <TableView fx:id="tabContratti" prefHeight="418.0" prefWidth="2302.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="id" minWidth="-Infinity" prefWidth="100.0" text="Id" />
+                  <TableColumn fx:id="operatore" minWidth="-Infinity" prefWidth="100.0" text="Operatore" />
+                  <TableColumn fx:id="cliente" minWidth="-Infinity" prefWidth="100.0" text="Cliente" />
+                  <TableColumn fx:id="targaVettura" minWidth="-Infinity" prefWidth="100.0" text="Targa vettura" />
+                  <TableColumn fx:id="agenziaNoleggio" minWidth="-Infinity" prefWidth="150.0" text="Agenzia noleggio" />
+                  <TableColumn fx:id="agenziaConsegna" minWidth="-Infinity" prefWidth="150.0" text="Agenzia consegna" />
+                  <TableColumn fx:id="dataStipula" minWidth="-Infinity" prefWidth="100.0" text="Data stipula" />
+                  <TableColumn fx:id="dataInizioNoleggio" minWidth="-Infinity" prefWidth="150.0" text="Data inizio noleggio" />
+                  <TableColumn fx:id="dataFineNoleggio" minWidth="-Infinity" prefWidth="150.0" text="Data fine noleggio" />
+                  <TableColumn fx:id="dataChiusura" minWidth="-Infinity" prefWidth="100.0" text="Data chiusura" />
+                  <TableColumn fx:id="limitazioneChilometraggio" minWidth="-Infinity" prefWidth="200.0" text="Limitazione chilometraggio" />
+                  <TableColumn fx:id="chilometriPrevisti" minWidth="-Infinity" prefWidth="150.0" text="Chilometri previsti" />
+                  <TableColumn fx:id="chilometriPercorsi" minWidth="-Infinity" prefWidth="150.0" text="Chilometri percorsi" />
+                  <TableColumn fx:id="rifornimento" minWidth="-Infinity" prefWidth="100.0" text="Rifornimento" />
+                  <TableColumn fx:id="optionals" minWidth="-Infinity" prefWidth="100.0" text="Optionals" />
+                  <TableColumn fx:id="assicurazioneAvanzata" minWidth="-Infinity" prefWidth="200.0" text="Assicurazione avanzata" />
+                  <TableColumn fx:id="acconto" minWidth="-Infinity" prefWidth="100.0" text="Acconto" />
+                  <TableColumn fx:id="costo" minWidth="-Infinity" prefWidth="100.0" text="Costo" />
+                  <TableColumn fx:id="chiuso" minWidth="-Infinity" prefWidth="100.0" text="Chiuso" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

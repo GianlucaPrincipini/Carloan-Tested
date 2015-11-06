@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.SchermataCliente">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="130.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@contents/carloanLogo.bmp" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <GridPane alignment="CENTER" layoutX="80.0" layoutY="227.0" prefHeight="137.0" prefWidth="864.0" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+         <children>
+            <Label text="Nome " />
+            <TextField fx:id="nome" GridPane.columnIndex="1" />
+            <Label text="Cognome" GridPane.columnIndex="2" />
+            <TextField fx:id="cognome" GridPane.columnIndex="3" />
+            <Label text="Data di nascita" GridPane.rowIndex="1" />
+            <DatePicker fx:id="dataDiNascita" prefHeight="39.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Codice patente" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="codicePatente" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label text="Telefono" GridPane.rowIndex="2" />
+            <TextField fx:id="telefono" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Email" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="email" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <BorderPane layoutY="545.0" prefHeight="109.0" prefWidth="1024.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <center>
+            <Button fx:id="conferma" mnemonicParsing="false" onMouseClicked="#onConferma" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" BorderPane.alignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="200.0" smooth="false">
+                     <image>
+                        <Image url="@contents/Conferma.bmp" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.37438423645320196" startY="0.5123152709359606">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

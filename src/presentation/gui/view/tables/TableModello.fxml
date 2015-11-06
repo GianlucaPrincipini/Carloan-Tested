@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.table.TableModello">
+   <children>
+      <ScrollPane layoutX="11.0" layoutY="15.0" prefHeight="420.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <TableView fx:id="tabModelli" prefHeight="418.0" prefWidth="1350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+                  <TableColumn fx:id="marca" prefWidth="100.0" text="Marca" />
+                  <TableColumn fx:id="nome" prefWidth="100.0" text="Nome" />
+                  <TableColumn fx:id="tipoCarburante" prefWidth="125.0" text="Tipo carburante" />
+                  <TableColumn fx:id="capacita" prefWidth="150.0" text="Capacità bagagliaio (l)" />
+                  <TableColumn fx:id="numeroPosti" prefWidth="125.0" text="Numero posti" />
+                  <TableColumn fx:id="numeroPorte" prefWidth="125.0" text="Numero porte" />
+                  <TableColumn fx:id="potenza" prefWidth="75.0" text="Potenza" />
+                  <TableColumn fx:id="peso" prefWidth="75.0" text="Peso" />
+                  <TableColumn fx:id="trasmissioneAutomatica" prefWidth="150.0" text="Trasmissione automatica" />
+                  <TableColumn fx:id="emissioni" prefWidth="150.0" text="Emissioni CO2 (kg/m³)" />
+                  <TableColumn fx:id="fascia" prefWidth="75.0" text="Fascia" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

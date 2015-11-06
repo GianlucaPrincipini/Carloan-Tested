@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.MainStage">
+   <children>
+      <VBox layoutX="-3.0" layoutY="-5.0" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <MenuBar layoutX="45.0" layoutY="18.0" prefHeight="25.0" prefWidth="389.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Sessione">
+                  <items>
+                    <MenuItem fx:id="disconnetti" mnemonicParsing="false" onAction="#disconnessione" text="Disconnetti" />
+                        <MenuItem fx:id="chiudiFinestra" mnemonicParsing="false" onAction="#chiudiFinestra" text="Chiudi" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Modifica">
+                  <items>
+                    <MenuItem fx:id="modTariffario" mnemonicParsing="false" onAction="#modificaTariffario" text="Tariffario" />
+                        <MenuItem fx:id="modIncidenza" mnemonicParsing="false" onAction="#modificaIncidenza" text="Incidenza Fasce" />
+                  </items>
+                </Menu>
+              </menus>
+               <effect>
+                  <Blend mode="EXCLUSION" opacity="0.15" />
+               </effect>
+            </MenuBar>
+            <ImageView fitHeight="145.0" fitWidth="1290.0" preserveRatio="true">
+               <image>
+                  <Image url="@contents/Car%20loan.jpg" />
+               </image>
+            </ImageView>
+            <ToolBar prefHeight="58.0" prefWidth="1279.0">
+              <items>
+                  <Button fx:id="aggiungi" mnemonicParsing="false" onMouseClicked="#onAggiungi">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@contents/add.ico" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="20.0" />
+                  <Button fx:id="modifica" mnemonicParsing="false" onMouseClicked="#onModifica">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@contents/edit.ico" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="20.0" />
+                  <Button fx:id="rimuovi" mnemonicParsing="false" onMouseClicked="#onRimuovi">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@contents/remove.ico" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="20.0" />
+                  <Button fx:id="chiudiContratto" mnemonicParsing="false" onMouseClicked="#onChiusuraContratto">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@contents/archive.ico" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="40.0" fitWidth="925.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button contentDisplay="RIGHT" mnemonicParsing="false" onMouseClicked="#onRefresh">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="45.0" preserveRatio="true">
+                           <image>
+                              <Image url="@contents/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+              </items>
+               <effect>
+                  <Blend mode="EXCLUSION" opacity="0.15" />
+               </effect>
+            </ToolBar>
+            <TabPane fx:id="tabPane" layoutX="2.0" layoutY="177.0" prefHeight="515.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab closable="false" text="Contratto">
+                  <content>
+                    <AnchorPane fx:id="paneContratti" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                  <Tab text="Cliente">
+                     <content>
+                        <AnchorPane fx:id="paneClienti" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Vettura">
+                     <content>
+                        <AnchorPane fx:id="paneVetture" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Modello">
+                     <content>
+                        <AnchorPane fx:id="paneModelli" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Fascia">
+                     <content>
+                        <AnchorPane fx:id="paneFasce" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Optional">
+                     <content>
+                        <AnchorPane fx:id="paneOptionals" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Agenzia">
+                     <content>
+                        <AnchorPane fx:id="paneAgenzie" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Operatore">
+                     <content>
+                        <AnchorPane fx:id="paneOperatori" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+              </tabs>
+               <effect>
+                  <Blend mode="DIFFERENCE" opacity="0.1" />
+               </effect>
+            </TabPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

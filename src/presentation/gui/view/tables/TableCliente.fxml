@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.table.TableCliente">
+   <children>
+      <TableView fx:id="tabClienti" prefHeight="448.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="100.0" text="Id" />
+            <TableColumn fx:id="nome" prefWidth="100.0" text="Nome" />
+            <TableColumn fx:id="cognome" prefWidth="100.0" text="Cognome" />
+            <TableColumn fx:id="dataDiNascita" prefWidth="100.0" text="Data di nascita" />
+            <TableColumn fx:id="codicePatente" prefWidth="100.0" text="Codice patente" />
+            <TableColumn fx:id="telefono" prefWidth="150.0" text="Numero di telefono" />
+            <TableColumn fx:id="email" prefWidth="100.0" text="e-mail" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="420.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.controller.table.TableFascia">
+   <children>
+      <TableView fx:id="tabFasce" prefHeight="448.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="100.0" text="Id" />
+            <TableColumn fx:id="nome" prefWidth="100.0" text="Nome" />
+            <TableColumn fx:id="tariffaBase" prefWidth="100.0" text="Tariffa base" />
+            <TableColumn fx:id="indiceMinimo" prefWidth="145.0" text="Indice minimo" />
+            <TableColumn fx:id="indiceMassimo" prefWidth="126.0" text="Indice massimo" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
